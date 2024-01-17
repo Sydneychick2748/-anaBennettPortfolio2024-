@@ -1,0 +1,203 @@
+
+
+
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   background: #1A1E23;
+//   font-family: 'Lato', sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   margin: 0;
+// }
+
+// nav {
+//   ul {
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   li {
+//     margin: 0 40px 0 0;
+//     opacity: 0.4;
+//     position: relative;
+//     transition: opacity 0.4s ease;
+//   }
+
+//   a {
+//     text-decoration: none;
+//     color: #fff;
+//     text-transform: uppercase;
+//     display: block;
+//     font-weight: 600;
+//     letter-spacing: 0.2em;
+//     font-size: 14px;
+//     position: relative;
+//   }
+
+//   li:hover,
+//   li.active {
+//     opacity: 1;
+//   }
+
+//   li:nth-child(1) a:before {
+//     background: #FF1847; /* Color for the first link */
+//   }
+
+//   li:nth-child(2) a:before {
+//     background: #00BFFF; /* Color for the second link */
+//   }
+
+//   li:nth-child(3) a:before {
+//     background: #32CD32; /* Color for the third link */
+//   }
+
+//   li:nth-child(4) a:before {
+//     background: #FFD700; /* Color for the fourth link */
+//   }
+
+//   a:before {
+//     content: "";
+//     position: absolute;
+//     bottom: -2px;
+//     left: 0;
+//     width: 0;
+//     height: 2px;
+//     transition: width 0.3s ease; /* Smooth transition for the line */
+//   }
+
+//   li:hover a:before,
+//   li.active a:before {
+//     width: 100%;
+//   }
+// }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1A1E23;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+nav {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    margin: 0 40px 0 0;
+    opacity: 0.4;
+    position: relative;
+    transition: opacity 0.4s ease;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+  }
+
+  
+  li:nth-child(1):hover a {
+    color: #FF1847 /* Text color on hover for the second link */
+  }
+  
+  li:nth-child(1):hover a:before,
+  li:nth-child(1).active a:before {
+    background:#FF1847; /* Color for the second link */
+    width: 230%; /* Ensure the line spans the full width on hover */
+  }
+
+
+li:nth-child(2):hover a {
+  color: #00BFFF; /* Text color on hover for the second link */
+}
+
+li:nth-child(2):hover a:before,
+li:nth-child(2).active a:before {
+  background: #00BFFF; /* Color for the second link */
+  width: 230%; /* Ensure the line spans the full width on hover */
+}
+
+
+li:nth-child(3):hover a {
+  color: #32CD32; /* Text color on hover for the second link */
+}
+
+li:nth-child(3):hover a:before,
+li:nth-child(3).active a:before {
+  background:#32CD32; //* Color for the second link */
+  width: 230%; /* Ensure the line spans the full width on hover */
+}
+
+
+li:nth-child(4):hover a {
+  color: #FFD700; /*  Text color on hover for the second link */
+}
+
+li:nth-child(4):hover a:before,
+li:nth-child(4).active a:before {
+  background:#FFD700; /* /* Color for the second link */
+  width: 230%; /* Ensure the line spans the full width on hover */
+}
+
+
+  
+
+  li:hover,
+  li.active {
+    opacity: 1;
+    color: transparent; /* Hide text color on hover */
+  }
+
+  
+
+  a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+  }
+
+  li:hover a:before,
+  li.active a:before {
+    width: 200%;
+    
+  }
+}

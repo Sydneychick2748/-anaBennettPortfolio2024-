@@ -131,45 +131,46 @@ nav {
 
   
   li:nth-child(1):hover a {
-    color: #FF1847 /* Text color on hover for the second link */
+    color: #ae579d /* Text color on hover for the second link */
   }
   
   li:nth-child(1):hover a:before,
   li:nth-child(1).active a:before {
-    background:#FF1847; /* Color for the second link */
+    background:#ae579d ;/* Text color on hover for the second link */
     width: 230%; /* Ensure the line spans the full width on hover */
   }
 
 
 li:nth-child(2):hover a {
-  color: #00BFFF; /* Text color on hover for the second link */
+  color: #1696c1; /* Text color on hover for the second link */
 }
 
 li:nth-child(2):hover a:before,
 li:nth-child(2).active a:before {
-  background: #00BFFF; /* Color for the second link */
+  background:  #1696c1; /* Text color on hover for the second link */
   width: 230%; /* Ensure the line spans the full width on hover */
 }
 
 
 li:nth-child(3):hover a {
-  color: #32CD32; /* Text color on hover for the second link */
+  color: #38d294; /* Text color on hover for the second link */
 }
 
 li:nth-child(3):hover a:before,
 li:nth-child(3).active a:before {
-  background:#32CD32; //* Color for the second link */
+  background: #38d294; /* Text color on hover for the second link */
+
   width: 230%; /* Ensure the line spans the full width on hover */
 }
 
 
 li:nth-child(4):hover a {
-  color: #FFD700; /*  Text color on hover for the second link */
+  color: #d4dd23; /*  Text color on hover for the second link */
 }
 
 li:nth-child(4):hover a:before,
 li:nth-child(4).active a:before {
-  background:#FFD700; /* /* Color for the second link */
+  background:#d4dd23; /*  Text color on hover for the second link */
   width: 230%; /* Ensure the line spans the full width on hover */
 }
 

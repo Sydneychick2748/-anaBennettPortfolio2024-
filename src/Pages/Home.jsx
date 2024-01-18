@@ -8,6 +8,7 @@ import Resume from "../Components/Resume";
 import Contact from "../Components/Contact";
 import "../app.scss";
 
+
 const Home = () => {
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [showMyWork, setShowMyWork] = useState(false);
@@ -37,6 +38,7 @@ const Home = () => {
 
   return (
     <div className="Home-Container">
+      
       <nav className="">
         <div className="line"></div>
         <ul className="ul-home">

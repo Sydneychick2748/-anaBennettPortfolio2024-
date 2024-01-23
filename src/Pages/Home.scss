@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+    background-color: #000;
+    background-image: url('');
+    background-position: center 2em;
+    background-repeat: no-repeat;
+    font-family: "Space Grotesk", "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  nav {
+   
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 60px 0 0;
+    opacity: 0.4;
+    transition: opacity 0.4s ease;
+  }
+  
+  nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+  }
+  
+  nav li:hover a {
+    color: #ae579d;
+  }
+  
+  nav li:hover a:before,
+  nav li.active a:before {
+    background: #ae579d;
+    width: 230%;
+    bottom: auto; /* Remove the bottom property */
+    top: -7px; /* Add top property to move the line on top */
+  }
+  
+  nav li:nth-child(2):hover a {
+    color: #1696c1;
+  }
+  
+  nav li:nth-child(2):hover a:before,
+  nav li:nth-child(2).active a:before {
+    background: #1696c1;
+    width: 230%;
+    bottom: auto;
+    top: -7px;
+  }
+  
+  nav li:nth-child(3):hover a {
+    color: #38d294;
+  }
+  
+  nav li:nth-child(3):hover a:before,
+  nav li:nth-child(3).active a:before {
+    background: #38d294;
+    width: 230%;
+    bottom: auto;
+    top: -7px;
+  }
+  
+  nav li:nth-child(4):hover a {
+    color: #d4dd23;
+  }
+  
+  nav li:nth-child(4):hover a:before,
+  nav li:nth-child(4).active a:before {
+    background: #d4dd23;
+    width: 230%;
+    bottom: auto;
+    top: -7px;
+  }
+  
+  nav li:hover,
+  nav li.active {
+    opacity: 1;
+    color: transparent;
+  }
+  
+  nav a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+  }
+  
+  nav li:hover a:before,
+  nav li.active a:before {
+    width: 300%;
+  }
+  
+  .quote-div{
+    color:white;
+    font-size: 10px;
+  }
+  

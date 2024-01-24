@@ -66,6 +66,7 @@ Player Names: Allows users to enter their names
   ];
 
   return (
+    <div id="portfolio">
     <div className="Home-Container">
       <div className="portfolio-section">
         <h1 className="portfolio-heading ">
@@ -90,6 +91,7 @@ Player Names: Allows users to enter their names
           );
         })}
       </div>
+    </div>
     </div>
   );
 };

@@ -1,29 +1,62 @@
 #about-me {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-image: url('/src/assets/blob-whitebkground.jpeg');  // Set the path to your background image
-  background-size: cover;  // Adjust as needed
-  background-position: center;  // Adjust as needed
+  justify-content: space-between;  // Add this to create space between video and content
+  background-image: url('/src/assets/blob-whitebkground.jpeg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  padding: 200px;  // Add padding for spacing
-  height: 50vh;  // Set a specific height, adjust as needed
-
-  .content {
-    width: 45%;  // Adjust the width as needed
-  }
-
-  .my-name,
-  .my-paragraph {
-    color: rgb(11, 10, 10);  // Set the text color
-  }
-
-  video {
-    max-width: 50%;  // Adjust the width as needed
-    height: auto;
-    object-fit: cover;
-    border-radius: 200px;
-   
-   
-  }
+  padding: 100px;
+  height: 100%;
 }
+
+.content {
+  width: 50%;
+  z-index: 1;  // Add this to position the content above the video
+}
+
+
+.my-paragraph {
+  color: rgb(11, 10, 10);
+  font-size: 20px;
+}
+.my-name{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+video {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 800px;
+}
+
+.typewriter{
+  font-size: 10px;
+  display: flex;
+
+}
+
+// /* DEMO-SPECIFIC STYLES */
+// .typewriter h1 {
+//   color: rgb(19, 12, 12);
+//   font-family: monospace;
+//   overflow: hidden;
+//   white-space: nowrap;
+//   margin: 0 auto;
+//   letter-spacing: .15em;
+//   animation: typing 5s steps(30, end), blink-caret 1s step-end infinite;
+// }
+
+// /* The typing effect */
+// @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
+
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+//   from, to { border-color: transparent }
+//   50% { border-color: orange }
+// }

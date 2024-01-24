@@ -1,6 +1,3 @@
-
-
-
 import "./AboutMe.scss";
 import React, { useState, useEffect } from "react";
 
@@ -26,7 +23,6 @@ const AboutMe = () => {
         playsInline
         width="50%"
         height="auto"
-       
       >
         <source
           src="/Videos/vecteezy_abstract-woman-face-one-line-drawing-portret-minimalistic_6671265.mp4"
@@ -37,9 +33,19 @@ const AboutMe = () => {
       <div className="content">
         <h1 className="my-name">Ana Bennett</h1>
         <p className="my-paragraph">
-          Passionate front-end developer with a knack for creating visually stunning and highly responsive web applications. Proficient in modern technologies like React, HTML, CSS, and JavaScript. Committed to delivering exceptional user experiences through clean and efficient code. Let's build something amazing together!
+          Passionate front-end developer with a knack for creating visually
+          stunning and highly responsive web applications. Proficient in modern
+          technologies like  HTML, CSS, and JavaScript,React. Committed to
+          delivering exceptional user experiences through clean and efficient
+          code. Let's build something amazing together!
         </p>
       </div>
+      {/* <div class="typewriter">
+        <h1>
+          "Coding solutions into web reality, one line at a time. Crafting
+          innovative solutions in the digital realm of web development."
+        </h1>
+      </div> */}
     </div>
   );
 };

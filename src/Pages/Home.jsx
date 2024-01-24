@@ -128,13 +128,7 @@ const Home = () => {
           </li>
         </ul>
       </nav>
-      <div className="quote-div">
-      <h1 className="quote">
-      "Coding solutions into web reality, one line at a time. Crafting innovative solutions in the digital realm of web development."
-
-
-      </h1>
-      </div>
+      
       {/* Sections to scroll to */}
       <AboutMe />
       <Portfolio/>

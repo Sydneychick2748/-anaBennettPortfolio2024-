@@ -42,12 +42,11 @@ Player Names: Allows users to enter their names
     },
     {
       title: "Project 3",
-      description: "Description for Project 1",
+      description: "Description  Project 1",
       imageUrl: "images/card-1.jpeg", // Updated path
       link: "https://example.com/project1",
     },
 
-    
     {
       title: "Project 5",
       description: "Description for Project 1",
@@ -60,38 +59,36 @@ Player Names: Allows users to enter their names
       imageUrl: "images/card-7.png", // Updated path
       link: "https://example.com/project1",
     },
-    
-    
+
     // Add more portfolio items as needed
   ];
 
   return (
     <div id="portfolio">
-    <div className="Home-Container">
-      <div className="portfolio-section">
-        <h1 className="portfolio-heading ">
-          Check out some of the the projects i worked on
-        </h1>
-      </div>
+      <div className="Home-Container">
+        <div className="portfolio-section">
+          <h1 className="portfolio-heading ">
+            Check out some of the the projects i worked on
+          </h1>
+        </div>
 
-      <div className="portfolio-cards">
-        {portfolioData.map((project, index) => {
-          const { title, description, imageUrl, link, gifUrl  } = project;
+        <div className="portfolio-cards">
+          {portfolioData.map((project, index) => {
+            const { title, description, imageUrl, link, gifUrl } = project;
 
-          return (
-            <PortfolioCard
-              key={index}
-              title={title}
-              description={description}
-              imageUrl={imageUrl}
-              link={link}
-              gifUrl={gifUrl} // Pass the gif URL as a prop
-        
-            />
-          );
-        })}
+            return (
+              <PortfolioCard
+                key={index}
+                title={title}
+                description={description}
+                imageUrl={imageUrl}
+                link={link}
+                gifUrl={gifUrl} // Pass the gif URL as a prop
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

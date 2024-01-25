@@ -1,8 +1,7 @@
 svg {
-	height: 23rem;
-	margin-right: 4rem;
+	height: 30rem;
+	
 }
-
 #envelope {
   animation: float 2s ease-in-out infinite;
 }
@@ -40,9 +39,6 @@ svg {
   }
 }
 
-.container {
-	height: 100vh;
-}
 
 form {
 	min-width: 25rem;
@@ -51,6 +47,7 @@ form {
 		font-family: 'Pacifico', cursive;
 		color: #212529;
 		font-size: 2.5rem;
+       
 	}
 	
   .form-control {
@@ -73,6 +70,7 @@ form {
 	
 	.message .form-control {
 			padding: .5rem 1.8rem;
+
 	}
 	
   ::placeholder {
@@ -81,7 +79,7 @@ form {
     font-size: 1.1rem;
     color: #838788;
     // position: relative;
-    // left: 0;
+    // // left: 0;
   }
 	
   input,
@@ -111,6 +109,7 @@ form {
   background-image:linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
   background-size: 300% 100%;
   transition: all 0.3s ease-in-out;
+ 
 }
 
 .btn.btn-primary:hover:enabled {

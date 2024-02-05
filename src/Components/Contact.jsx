@@ -2,10 +2,13 @@ import React from "react";
 import  "./Contact.scss"
 
 const Contact = () => {
+
+
+
   return (
     <div id="contact">
-      <div className="container d-flex justify-content-center align-items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
+      <div className=" main-contact-container container d-flex justify-content-center align-items-center">
+      <svg  className="svg-email-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
 			<g id="Image">
 					<g id="g14">
 							<g id="g16">
@@ -300,33 +303,33 @@ const Contact = () => {
 					</g>
 			</g>
 	</svg>
-  <form>
-		<h1 className="title text-center mb-4">Lets Chat I would love to here from you </h1>
+  <form >
+		<h1 className=" title-form title text-center mb-4">Lets Chat I would love to here from you </h1>
 
 			
 			<div className="form-group position-relative">
-				<label htmlFor="formName" className="d-block">
+				<label htmlFor="formName" className=" label-formName d-block">
 					<i className="icon" data-feather="user"></i>
 				</label>
-				<input type="text" id="formName" className="form-control form-control-lg thick" placeholder="Name"/>
+				<input type="text" id="formName" className=" input-formName form-control form-control-lg thick" placeholder="Name"/>
 			</div>
 
 		
 			<div className="form-group position-relative">
-				<label htmlFor="formEmail" className="d-block">
+				<label htmlFor="formEmail" className=" label-formEmail d-block">
 					<i className="icon" data-feather="mail"></i>
 				</label>
-				<input type="email" id="formEmail" className="form-control form-control-lg thick" placeholder="E-mail"/>
+				<input type="email" id="formEmail" className=" input-formEmail form-control form-control-lg thick" placeholder="E-mail"/>
 			</div>
 
 		
 			<div className="form-group message">
-				<textarea id="formMessage" className="form-control form-control-lg" rows="7" placeholder="Messages"></textarea>
+				<textarea id="formMessage" className=" textarea-FormMessage form-control form-control-lg" rows="9" placeholder="Messages"></textarea>
 			</div>
 		
 		
 			<div className="text-center">
-				<button type="submit" className="btn btn-primary" tabIndex="-1">Send message</button>
+				<button type="submit" className=" submit-btn btn btn-primary" tabIndex="-1">Send message</button>
 			</div>
 	</form>
 	

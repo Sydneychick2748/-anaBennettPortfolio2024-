@@ -117,6 +117,7 @@ const Home = () => {
           <li>
             <a href="#about-me">About Me</a>
           </li>
+          
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
@@ -131,8 +132,9 @@ const Home = () => {
       
       {/* Sections to scroll to */}
       <AboutMe />
+     
       <Portfolio/>
-      {/* <Resume /> */}
+       {/* <Resume />  */}
       <Contact />
     </div>
   );

@@ -111,7 +111,7 @@ import "./Home.scss";
 const Home = () => {
   return (
     <div className="Home-Container">
-      <nav className="">
+      {/* <nav className="">
         <div className="line"></div>
         <ul className="ul-home">
           <li>
@@ -121,21 +121,22 @@ const Home = () => {
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
-          {/* <li>
+          
+          <li>
             <a href="#resume">Resume</a>
-          </li> */}
+          </li>
           <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
       
-      {/* Sections to scroll to */}
-      <AboutMe />
+ 
+        <AboutMe /> 
      
-      <Portfolio/>
-       {/* <Resume />  */}
-      <Contact />
+     <Portfolio/>
+        <Resume /> 
+      <Contact />  */}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioCard from "../components/PortfolioCard";
+import PortfolioCard from "../Components/PortfolioCard";
 import "./Portfolio.scss";
 
 const Portfolio = () => {
@@ -99,8 +99,8 @@ const Portfolio = () => {
             );
           })}
         </div>
-        <div className="portfolio-section">
-          <h1 className="portfolio-heading ">
+        <div className="portfolio-section-resume">
+          <h1 className="portfolio-heading-resume ">
              Take a look at some of the work I have done 
           </h1>
         </div>

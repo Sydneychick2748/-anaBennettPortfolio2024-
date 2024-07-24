@@ -30,16 +30,20 @@ const AboutMe = () => {
         />
         Your browser does not support the video tag.
       </video>
-      <div className="content">
-        <h1 className="my-name">Ana Bennett</h1>
-        <p className="my-paragraph">
-          Passionate front-end developer with a knack for creating visually
-          stunning and highly responsive web applications. Proficient in modern
-          technologies like  HTML, CSS, and JavaScript,React. Committed to
-          delivering exceptional user experiences through clean and efficient
-          code. Let's build something amazing together!
-        </p>
-      </div>
+      <div class="bio-section">
+  <svg class="bio-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+    <path fill="#1b7d74" d="M0,100 C150,200 350,0 500,100 C650,200 850,0 1000,100 L1000,200 L0,200 Z"></path>
+  </svg>
+  <div class="bio-content">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate developer with a love for creating interactive and dynamic web applications.
+      My journey in the tech industry has been fueled by continuous learning and the thrill of solving complex problems.
+      Welcome to my portfolio!
+    </p>
+  </div>
+</div>
+      
       {/* <div class="typewriter">
         <h1>
           "Coding solutions into web reality, one line at a time. Crafting

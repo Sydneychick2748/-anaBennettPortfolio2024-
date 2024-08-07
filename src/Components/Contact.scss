@@ -1,60 +1,60 @@
-svg {
-	height: 30rem;
+// svg {
+// 	height: 30rem;
 	
-}
-#envelope {
-  animation: float 2s ease-in-out infinite;
-}
+// }
+// #envelope {
+//   animation: float 2s ease-in-out infinite;
+// }
 
-#star1, #star2, #star3, #star4, #star5, #star6 {
-  animation: blink 1s ease-in-out infinite;
-}
-#star2 { animation-delay: 100ms; }
-#star3 { animation-delay: 500ms; }
-#star4 { animation-delay: 700ms; }
-#star5 { animation-delay: 300ms; }
-#star6 { animation-delay: 200ms }
+// #star1, #star2, #star3, #star4, #star5, #star6 {
+//   animation: blink 1s ease-in-out infinite;
+// }
+// #star2 { animation-delay: 100ms; }
+// #star3 { animation-delay: 500ms; }
+// #star4 { animation-delay: 700ms; }
+// #star5 { animation-delay: 300ms; }
+// #star6 { animation-delay: 200ms }
 
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+// @keyframes float {
+//   0% {
+//     transform: translateY(0px);
+//   }
+//   50% {
+//     transform: translateY(-20px);
+//   }
+//   100% {
+//     transform: translateY(0px);
+//   }
+// }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @keyframes blink {
+//   0% {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: .5;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
-.main-contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-top: 60px;
-}
+// .main-contact-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+//   padding-top: 60px;
+// }
 
-.title-form {
-  /* font-family: "Pacifico", cursive; */
-  color: #cd8e53 !important;
-  /* font-size: 2.5rem; */
-  font-family: "Space Grotesk", "Roboto", sans-serif !important;
-  font-size: 2rem !important;
-}
+// .title-form {
+//   /* font-family: "Pacifico", cursive; */
+//   color: #cd8e53 !important;
+//   /* font-size: 2.5rem; */
+//   font-family: "Space Grotesk", "Roboto", sans-serif !important;
+//   font-size: 2rem !important;
+// }
 
 
 
@@ -73,79 +73,79 @@ svg {
 
 
 
-#contact {
-    height: 100vh; /* Ensure the form takes the full height of the viewport */
-  }
+// #contact {
+//     height: 100vh; /* Ensure the form takes the full height of the viewport */
+//   }
   
-  .main-contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Take full height of the parent (#contact) */
-  }
+//   .main-contact-container {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%; /* Take full height of the parent (#contact) */
+//   }
   
-  .svg-email-image {
-    height: 30rem;
-    /* Additional styles for your SVG image */
-  }
+//   .svg-email-image {
+//     height: 30rem;
+//     /* Additional styles for your SVG image */
+//   }
   
-  form {
-    margin-top: 20px;
-    width: 100%; /* Make the form take the full width of its container */
-    max-width: 400px; /* Set a maximum width for the form */
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #f2f6f8;
-    border-radius: 10px;
+//   form {
+//     margin-top: 20px;
+//     width: 100%; /* Make the form take the full width of its container */
+//     max-width: 400px; /* Set a maximum width for the form */
+//     padding: 20px;
+//     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+//     background-color: #f2f6f8;
+//     border-radius: 10px;
     
-  }
+//   }
   
-  .title-form {
-    font-family: 'Pacifico', cursive;
-    color: #212529;
-    font-size: 2.5rem;
-    margin-bottom: 20px; /* Add margin at the bottom for spacing */
-  }
+//   .title-form {
+//     font-family: 'Pacifico', cursive;
+//     color: #212529;
+//     font-size: 2.5rem;
+//     margin-bottom: 20px; /* Add margin at the bottom for spacing */
+//   }
   
-  .form-group {
-    position: relative;
-    margin-bottom: 20px; /* Add margin at the bottom for spacing */
-  }
+//   .form-group {
+//     position: relative;
+//     margin-bottom: 20px; /* Add margin at the bottom for spacing */
+//   }
   
-  .input-formName,
-  .input-formEmail,
-  .textarea-FormMessage {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px; /* Add margin at the top for spacing */
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-  }
+//   .input-formName,
+//   .input-formEmail,
+//   .textarea-FormMessage {
+//     width: 100%;
+//     padding: 10px;
+//     border-radius: 5px;
+//     border: 1px solid #ccc;
+//     margin-top: 5px; /* Add margin at the top for spacing */
+//     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+//   }
 
   
   
   
-  .submit-btn {
-    font-family: "Space Grotesk", "Roboto", sans-serif;
-    font-weight: 200;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0 20px;
-    border: 0;
-    border-radius: 5px;
-    background-image: linear-gradient(131deg, #cd8e53, #ff923c, #cd8e53, #ff923c);
-    background-size: 300% 100%;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    color: #fff;
+//   .submit-btn {
+//     font-family: "Space Grotesk", "Roboto", sans-serif;
+//     font-weight: 200;
+//     height: 2.5rem;
+//     line-height: 2.5rem;
+//     padding: 0 20px;
+//     border: 0;
+//     border-radius: 5px;
+//     background-image: linear-gradient(131deg, #cd8e53, #ff923c, #cd8e53, #ff923c);
+//     background-size: 300% 100%;
+//     transition: all 0.3s ease-in-out;
+//     cursor: pointer;
+//     color: #fff;
     
-  }
+//   }
   
-  .submit-btn:hover {
-    box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
-    background-size: 100% 100%;
-    transform: translateY(-0.15em);
-  }
+//   .submit-btn:hover {
+//     box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+//     background-size: 100% 100%;
+//     transform: translateY(-0.15em);
+//   }
   

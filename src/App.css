@@ -138,7 +138,7 @@ body {
    font-family: "Roboto", sans-serif;
    position: absolute;
    text-align: center;
-   font-size: clamp(24px, 20vw, 120px);
+   font-size: clamp(24px, 20vw, 100px);
    text-transform: uppercase;
    font-weight: 800;
    letter-spacing: 10px;

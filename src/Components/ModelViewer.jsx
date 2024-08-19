@@ -36,7 +36,7 @@ const ModelViewer = () => {
           child.material = new THREE.MeshStandardMaterial({
             color: 0xffffff,
             roughness: 0,
-            metalness: 0.5,
+            metalness: 0.7,
             envMap: scene.environment,
             envMapIntensity: 1,
           });
@@ -71,7 +71,7 @@ const ModelViewer = () => {
       pointLightRef2.current.position.z = -Math.cos(theta + 1) * 11;
       pointLightRef2.current.position.y = 2 * -Math.cos(theta - 3) - 6;
 
-      groupRef.current.rotation.y += 0.01; // Rotate the model
+      groupRef.current.rotation.y += 0.002; // Rotate the model
     }
   });
 

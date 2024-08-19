@@ -43,8 +43,8 @@ const ModelViewer = () => {
           child.material.needsUpdate = true;
         }
       });
-      object.scale.set(0.08, 0.08, 0.08); // Adjust scale if necessary
-      object.position.set(-0.1, -0.1, -0.1);
+      object.scale.set(0.1,0.1, 0.1); // Adjust scale if necessary
+      object.position.set(0, 0, 0);
       groupRef.current.add(object);
     });
   }, [scene]);

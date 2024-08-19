@@ -111,6 +111,14 @@ body {
    transform: translate(-50%, -50%);
    z-index: 2;
  }
+ .canvas-container{
+  
+      display: block;
+   
+    width: 800px !important;
+    height: 1000px !important; 
+}
+ 
  
  .headline-container {
    display: flex;

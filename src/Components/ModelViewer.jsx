@@ -1,11 +1,10 @@
 // src/components/ModelViewer.js
-import React, { useRef, useEffect, useState } from 'react';
-import { useLoader, useFrame, useThree } from '@react-three/fiber';
-import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import * as THREE from 'three';
+import React, { useRef, useEffect, useState } from "react";
+import { useLoader, useFrame, useThree } from "@react-three/fiber";
+import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader";
+
+import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 
 const ModelViewer = () => {
   const groupRef = useRef();
@@ -13,11 +12,9 @@ const ModelViewer = () => {
   const pointLightRef1 = useRef();
   const pointLightRef2 = useRef();
   const [theta1, setTheta1] = useState(0);
-   const { scene } = useThree();
+  const { scene } = useThree();
 
-  
-
-   // Load HDR Environment
+  // Load HDR Environment
   useEffect(() => {
     const hdrEquirect = new RGBELoader().load(
       "https://raw.githubusercontent.com/miroleon/gradient_hdr_freebie/main/Gradient_HDR_Freebies/ml_gradient_freebie_01.hdr",
@@ -26,32 +23,29 @@ const ModelViewer = () => {
         scene.environment = texture;
       }
     );
-    // /models/gear/Gear1.obj
-    // Load OBJ model without MTLLoader
+
     const objLoader = new OBJLoader();
-    objLoader.load('/models/low_poly_tree/Lowpoly_tree_sample.obj', (object) => {
-      // Apply MeshStandardMaterial with environment map
-      object.traverse((child) => {
-        if (child.isMesh) {
-          child.material = new THREE.MeshStandardMaterial({
-            color: 0xffffff,
-            roughness: 0,
-            metalness: 0.7,
-            envMap: scene.environment,
-            envMapIntensity: 1,
-          });
-          child.material.needsUpdate = true;
-        }
-      });
-      object.scale.set(0.1,0.1, 0.1); // Adjust scale if necessary
-      object.position.set(0, 0, 0);
-      groupRef.current.add(object);
-    });
+    objLoader.load(
+      "/models/low_poly_tree/Lowpoly_tree_sample.obj",
+      (object) => {
+        object.traverse((child) => {
+          if (child.isMesh) {
+            child.material = new THREE.MeshStandardMaterial({
+              color: 0xffffff,
+              roughness: 0,
+              metalness: 0.7,
+              envMap: scene.environment,
+              envMapIntensity: 1,
+            });
+            child.material.needsUpdate = true;
+          }
+        });
+        object.scale.set(0.1, 0.1, 0.1); // Adjust scale if necessary
+        object.position.set(0, 0, 0);
+        groupRef.current.add(object);
+      }
+    );
   }, [scene]);
-
-
-
-  
 
   useFrame(() => {
     setTheta1((prevTheta) => prevTheta + 0.0025);

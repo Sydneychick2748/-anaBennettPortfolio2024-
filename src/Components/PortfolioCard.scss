@@ -1,0 +1,73 @@
+$primary-color: #FFFFFF; // use a matching color from your theme
+$accent-color: #e89867; // for links or buttons
+$background-color: #202124; // dark background to match your portfolio
+$text-color: #E5E5E5;
+
+
+
+.portfolio-container {
+    padding-top: 2000px;
+    padding-bottom: 1000px;
+     z-index: 5; /* Make sure the portfolio container stays on top */
+   
+  }
+  
+  .project-card {
+    z-index: 5; /* Ensure the project cards stay on top of the model */
+    background-color: $background-color;
+    color: $text-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+  
+    .card-image {
+      img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  
+    .card-info {
+      padding: 15px;
+      text-align: center;
+  
+      h3 {
+        font-size: 1.8em;
+        margin: 10px 0;
+        color: $primary-color;
+      }
+  
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        color: $text-color;
+      }
+  
+      a {
+        text-decoration: none;
+        color: $accent-color;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 1px solid $accent-color;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  
+        &:hover {
+          background-color: $accent-color;
+          color: $background-color;
+        }
+      }
+    }
+  }
+  

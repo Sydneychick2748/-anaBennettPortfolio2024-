@@ -3,16 +3,23 @@ import "./PortfolioCard.scss";
 import resourcefulVideo from '../assets/ResourceFull Providers.mp4';
 import subaruVideo from "../assets/2024 Subaru Crosstrek Landing Page.mp4";
 import kubecostVideo from "../assets/Kubecost.mp4";
+import lighthouseVideo from '../assets/Lighthouse app.mp4';
+
 
 
 
 const projects = [
   
   {
-    title: "LightHouse App",
-    description: "Developed login, email, and password verification functionality using React and JavaScript.",
-    imageUrl: "/images/lighthouse.png",
-    projectLink: "https://lighthouseapp.com"
+    title: "Lighthouse App",
+    description: `
+       Built and revamped the Lighthouse App's landing page for Annie Cannons.
+      Using React to create a responsive and interactive UI, and applied Material-UI for custom-styled components like buttons, 
+      text fields, and dialogs that matched the updated branding. 
+      Integrated AWS Amplify for secure user authentication, managing login and password reset with form validation and error handling.
+      Rebuilt the entire CSS from scratch to align with the new design, updating images, logos, and layout for a modern, consistent look.
+    `,
+    videoUrl: lighthouseVideo 
   },
   {
     title: "Kubecost Webpage",
@@ -29,7 +36,7 @@ const projects = [
   {
     title: "Resourceful Provider App",
     description: `
-      Built a dynamic program listing page using React.js with data fetched from AWS via a RESTful API. 
+      Built a dynamic program listing page for Annie Cannons using React.js with data fetched from AWS via a RESTful API. 
       Tools Used: AWS API Gateway, React.js, JavaScript, CSS/Sass.
       Key Tasks:
       - Pulled program-specific data, replacing organization listings with individual program details.

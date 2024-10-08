@@ -7,7 +7,11 @@ const Footer = () => {
     <footer>
       <div className="footer-content">
         <div className="col">
-          <h3>Portfolio</h3>
+        <button className="download-button">
+            <a href="/path/to/Resume-Ana-Bennett-Sept2024.pdf" download>
+              Download Resume
+            </a>
+          </button>
           <p>Made with <span style={{ color: '#BA6573' }}>❤</span> by Ana Bennett</p>
         </div>
         <div className="soc">

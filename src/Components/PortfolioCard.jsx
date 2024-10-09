@@ -19,7 +19,7 @@ const projects = [
       Integrated AWS Amplify for secure user authentication, managing login and password reset with form validation and error handling.
       Rebuilt the entire CSS from scratch to align with the new design, updating images, logos, and layout for a modern, consistent look.
     `,
-    videoUrl: lighthouseVideo 
+    videoUrl: "/Videos/Lighthouse app.mp4"
   },
   {
     title: "Kubecost Webpage",
@@ -30,7 +30,7 @@ const projects = [
       The project helps Kubecost users monitor and optimize their Kubernetes spending in real-time, 
       offering detailed views of resource usage and related costs.
     `,
-    videoUrl: kubecostVideo
+    videoUrl: "/Videos/Kubecost.mp4"
   },
 
   {
@@ -46,7 +46,7 @@ const projects = [
       This project showcases my ability to integrate cloud-based data with React and handle dynamic, conditional rendering.
     `,
     
-    videoUrl: resourcefulVideo,
+    videoUrl: "/Videos/ResourceFull Providers.mp4"
    
   },
   {
@@ -56,8 +56,8 @@ const projects = [
       The project was completed in 2 hours using Bootstrap and jQuery, with a focus on responsiveness from 360 pixels and up. 
       All assets and text were provided, and I implemented a design that fulfilled all specified criteria.
     `,
-    videoUrl: subaruVideo,
    
+    videoUrl: "/Videos/2024 Subaru Crosstrek Landing Page.mp4"
   }
 ];
 

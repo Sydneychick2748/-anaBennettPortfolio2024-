@@ -1,9 +1,9 @@
 import "./PortfolioCard.scss";
 
-import resourcefulVideo from '../assets/ResourceFull Providers.mp4';
-import subaruVideo from "../assets/2024 Subaru Crosstrek Landing Page.mp4";
-import kubecostVideo from "../assets/Kubecost.mp4";
-import lighthouseVideo from '../assets/Lighthouse app.mp4';
+import resourcefulVideo from '/Videos/ResourceFull Providers.mp4';
+import subaruVideo from "/Videos/2024 Subaru Crosstrek Landing Page.mp4";
+import kubecostVideo from "/Videos/Kubecost.mp4";
+import lighthouseVideo from '/Videos/Lighthouse app.mp4';
 
 
 

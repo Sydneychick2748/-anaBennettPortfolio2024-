@@ -1,11 +1,6 @@
 import "./PortfolioCard.scss";
 
-import resourcefulVideo from '/Videos/ResourceFull Providers.mp4';
-import subaruVideo from "/Videos/2024 Subaru Crosstrek Landing Page.mp4";
-import kubecostVideo from "/Videos/Kubecost.mp4";
-import lighthouseVideo from '/Videos/Lighthouse app.mp4';
-
-
+import React, { useEffect } from 'react';
 
 
 const projects = [
@@ -19,7 +14,9 @@ const projects = [
       Integrated AWS Amplify for secure user authentication, managing login and password reset with form validation and error handling.
       Rebuilt the entire CSS from scratch to align with the new design, updating images, logos, and layout for a modern, consistent look.
     `,
-    videoUrl: "./Videos/Lighthouse app.mp4"
+    // videoUrl: "./Videos/Lighthouse app.mp4"
+    videoUrl: "https://youtu.be/PERoi2a8dyw"
+   // https://youtu.be/PERoi2a8dyw
   },
   {
     title: "Kubecost Webpage",
@@ -30,8 +27,11 @@ const projects = [
       The project helps Kubecost users monitor and optimize their Kubernetes spending in real-time, 
       offering detailed views of resource usage and related costs.
     `,
-    videoUrl: "/Videos/Kubecost.mp4"
+    // videoUrl: "/Videos/Kubecost.mp4"
+    videoUrl: "https://youtu.be/Ls0V2jgmMyU"
   },
+     //https://youtu.be/Ls0V2jgmMyU
+  
 
   {
     title: "Resourceful Provider App",
@@ -46,7 +46,8 @@ const projects = [
       This project showcases my ability to integrate cloud-based data with React and handle dynamic, conditional rendering.
     `,
     
-    videoUrl: "./Videos/ResourceFull Providers.mp4"
+    // videoUrl: "./Videos/ResourceFull Providers.mp4"
+    videoUrl: "https://youtu.be/kZHsLRCEHog"
    
   },
   {
@@ -56,13 +57,18 @@ const projects = [
       The project was completed in 2 hours using Bootstrap and jQuery, with a focus on responsiveness from 360 pixels and up. 
       All assets and text were provided, and I implemented a design that fulfilled all specified criteria.
     `,
+     videoUrl: "https://youtu.be/v7kqrDBzBXY"
    
-    videoUrl: "./Videos/2024 Subaru Crosstrek Landing Page.mp4"
+    
+    // videoUrl: "https://player.vimeo.com/video/1018508906" 
+    // videoUrl: "./Videos/2024 Subaru Crosstrek Landing Page.mp4"
+    // https://youtu.be/v7kqrDBzBXY
   }
 ];
 
 
 const PortfolioCard = () => {
+  
     return (
       <div className="portfolio-container">
         <div className="portfolio-grid">
@@ -74,28 +80,20 @@ const PortfolioCard = () => {
               <div className="card-info">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <video controls width="100%">
+                
+                {/* <video controls width="100%">
       <source src={project.videoUrl} type="video/mp4" />
       Your browser does not support the video tag.
-    </video>
-    {/* <video controls width="100%">
-  <source src="/assets/Kubecost.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video> */}
-    {/* <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
-      Visit Project
-    </a> */}
-                {/* {project.videoUrl ? (
-      <video controls width="100%">
-        <source src={project.videoUrl} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    ) : (
-      <img src={project.imageUrl} alt={`${project.title} screenshot`} />
-    )} */}
-                {/* <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
-                  Visit Website
-                </a> */}
+    </video> */}
+    
+    <iframe 
+                width="100%" 
+                height="500" 
+                src={`${project.videoUrl.replace('youtu.be', 'www.youtube.com/embed')}?rel=0`} 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
               </div>
             </div>
           ))}

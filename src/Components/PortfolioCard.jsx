@@ -28,7 +28,8 @@ const projects = [
       offering detailed views of resource usage and related costs.
     `,
     // videoUrl: "/Videos/Kubecost.mp4"
-    videoUrl: "https://youtu.be/Ls0V2jgmMyU"
+    videoUrl: "https://www.youtube.com/embed/Ls0V2jgmMyU"
+    // videoUrl: "https://youtu.be/Ls0V2jgmMyU"
   },
      //https://youtu.be/Ls0V2jgmMyU
   
@@ -85,15 +86,24 @@ const PortfolioCard = () => {
       <source src={project.videoUrl} type="video/mp4" />
       Your browser does not support the video tag.
     </video> */}
+    <iframe
+              width="100%"
+              height="500"
+              src={project.videoUrl}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title={project.title}
+            ></iframe>
     
-    <iframe 
+    {/* <iframe 
                 width="100%" 
                 height="500" 
                 src={`${project.videoUrl.replace('youtu.be', 'www.youtube.com/embed')}?rel=0`} 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen>
-              </iframe>
+              </iframe> */}
               </div>
             </div>
           ))}

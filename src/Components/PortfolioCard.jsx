@@ -14,7 +14,7 @@ const projects = [
     `,
     // videoUrl: "https://www.youtube.com/embed/PERoi2a8dyw"
 
-    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/Lighthouse+app.mp4",
+    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/Lighthouse+_+Data+Initiative.mp4",
     // videoUrl: "https://youtu.be/PERoi2a8dyw"
     // https://youtu.be/PERoi2a8dyw
   },
@@ -27,7 +27,7 @@ const projects = [
       The project helps Kubecost users monitor and optimize their Kubernetes spending in real-time, 
       offering detailed views of resource usage and related costs.
     `,
-    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/Kubecost.mp4",
+    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/Vite+%2B+React+(2).mp4",
     // videoUrl: "https://youtu.be/Ls0V2jgmMyU"
   },
   //https://youtu.be/Ls0V2jgmMyU
@@ -45,7 +45,7 @@ const projects = [
       This project showcases my ability to integrate cloud-based data with React and handle dynamic, conditional rendering.
     `,
     // videoUrl: "https://www.youtube.com/embed/v7kqrDBzBXY"
-    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/ResourceFull+Providers.mp4",
+    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/ResourceFull+Providers+(1).mp4",
   },
   {
     title: "2024 Subaru Crosstrek Landing Page",
@@ -56,7 +56,7 @@ const projects = [
     `,
     // videoUrl: "https://www.youtube.com/embed/v7kqrDBzBXY"
     //videoUrl: "https://player.vimeo.com/video/1020360541"
-    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/2024+Subaru+Crosstrek+Landing+Page.mp4",
+    videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/2024+Subaru+Crosstrek+Landing+Page+(1).mp4",
   },
 ];
 

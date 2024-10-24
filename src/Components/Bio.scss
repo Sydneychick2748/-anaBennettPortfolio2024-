@@ -1,3 +1,86 @@
-.warning{
-    color:red;
+.bio-container {
+  position: absolute;
+  top: 140%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  background-color: rgba(17, 21, 28, 0.8); /* Transparent background */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
+
+.bio-section {
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+  text-align: left;
+  padding: 20px;
+  line-height: 1.6; /* Improves readability */
+}
+
+.bio-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+ .bio-image {
+ max-width: 180px;
+ border-radius: 10px;
+ }
+//   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); /* Octagon shape */
+ 
+
+//   display: block;
+//   margin: 0 auto;
+
+
+.italic-heading {
+  font-style: italic;
+  font-weight: bold;
+  color: #e89867; /* Accent color */
+  text-align:  center;
+}
+
+.bio-section p {
+  margin-top: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.bio-section p:hover {
+  color: #e89867;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  background-color: #e89867; /* Accent color */
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resume-icon {
+  margin-right: 10px;
+}
+
+.resume-button:hover {
+  background-color: #8c89d8;
+  transform: scale(1.05);
+}
+
+/* Center the button in the bio section */
+.bio-section {
+  text-align: center;
+}
+
+
+
+

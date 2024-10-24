@@ -6,59 +6,54 @@ const projects = [
   {
     title: "Lighthouse App",
     description: `
-       Built and revamped the Lighthouse App's landing page for Annie Cannons.
-      Using React to create a responsive and interactive UI, and applied Material-UI for custom-styled components like buttons, 
-      text fields, and dialogs that matched the updated branding. 
-      Integrated AWS Amplify for secure user authentication, managing login and password reset with form validation and error handling.
-      Rebuilt the entire CSS from scratch to align with the new design, updating images, logos, and layout for a modern, consistent look.
+      <ul>
+        <li>Built and revamped the Lighthouse App's landing page for Annie Cannons.</li>
+        <li>Using React to create a responsive and interactive UI, and applied Material-UI for custom-styled components like buttons, text fields, and dialogs that matched the updated branding.</li>
+        <li>Integrated AWS Amplify for secure user authentication, managing login and password reset with form validation and error handling.</li>
+        <li>Rebuilt the entire CSS from scratch to align with the new design, updating images, logos, and layout for a modern, consistent look.</li>
+      </ul>
     `,
-    // videoUrl: "https://www.youtube.com/embed/PERoi2a8dyw"
-
     videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/Lighthouse+_+Data+Initiative.mp4",
-    // videoUrl: "https://youtu.be/PERoi2a8dyw"
-    // https://youtu.be/PERoi2a8dyw
   },
   {
     title: "Kubecost Webpage",
     description: `
-      Built a cost monitoring dashboard for Kubecost, focused on providing insights into Kubernetes resource utilization and expenses. 
-      I used React.js for building the interface, Recharts for visualizing cost data with interactive charts, 
-      and MUI DataGrid for managing and displaying EMR job data efficiently.
-      The project helps Kubecost users monitor and optimize their Kubernetes spending in real-time, 
-      offering detailed views of resource usage and related costs.
+      <ul>
+        <li>Built a cost monitoring dashboard for Kubecost, focused on providing insights into Kubernetes resource utilization and expenses.</li>
+        <li>Used React.js for building the interface, Recharts for visualizing cost data with interactive charts.</li>
+        <li>Managed and displayed EMR job data efficiently with MUI DataGrid.</li>
+        <li>Helped Kubecost users monitor and optimize their Kubernetes spending in real-time with detailed resource usage and cost views.</li>
+      </ul>
     `,
     videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/Vite+%2B+React+(2).mp4",
-    // videoUrl: "https://youtu.be/Ls0V2jgmMyU"
   },
-  //https://youtu.be/Ls0V2jgmMyU
-
   {
     title: "Resourceful Provider App",
     description: `
-      Built a dynamic program listing page for Annie Cannons using React.js with data fetched from AWS via a RESTful API. 
-      Tools Used: AWS API Gateway, React.js, JavaScript, CSS/Sass.
-      Key Tasks:
-      - Pulled program-specific data, replacing organization listings with individual program details.
-      - Dynamically applied organization colors to avatars based on data.
-      - Filtered service types for each program, displaying only relevant types.
-      - Displayed organization names with conditional text for virtual programs and confidential addresses.
-      This project showcases my ability to integrate cloud-based data with React and handle dynamic, conditional rendering.
+      <ul>
+        <li>Built a dynamic program listing page for Annie Cannons using React.js with data fetched from AWS via a RESTful API.</li>
+        <li>Tools Used: AWS API Gateway, React.js, JavaScript, CSS/Sass.</li>
+        <li>Pulled program-specific data, replacing organization listings with individual program details.</li>
+        <li>Dynamically applied organization colors to avatars based on data.</li>
+        <li>Filtered service types for each program, displaying only relevant types.</li>
+        <li>Displayed organization names with conditional text for virtual programs and confidential addresses.</li>
+      </ul>
     `,
-    // videoUrl: "https://www.youtube.com/embed/v7kqrDBzBXY"
     videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/ResourceFull+Providers+(1).mp4",
   },
   {
     title: "2024 Subaru Crosstrek Landing Page",
     description: `
-      Developed a responsive landing page for the 2024 Subaru Crosstrek during a technical interview with DealerOn. 
-      The project was completed in 2 hours using Bootstrap and jQuery, with a focus on responsiveness from 360 pixels and up. 
-      All assets and text were provided, and I implemented a design that fulfilled all specified criteria.
+      <ul>
+        <li>Developed a responsive landing page for the 2024 Subaru Crosstrek during a technical interview with DealerOn.</li>
+        <li>Completed the project in 2 hours using Bootstrap and jQuery, focusing on responsiveness from 360 pixels and up.</li>
+        <li>Implemented a design that fulfilled all specified criteria with provided assets and text.</li>
+      </ul>
     `,
-    // videoUrl: "https://www.youtube.com/embed/v7kqrDBzBXY"
-    //videoUrl: "https://player.vimeo.com/video/1020360541"
     videoUrl: "https://s3.us-west-1.amazonaws.com/a.bennettportfoilo/2024+Subaru+Crosstrek+Landing+Page+(1).mp4",
   },
 ];
+
 
 const PortfolioCard = () => {
   return (
@@ -66,25 +61,18 @@ const PortfolioCard = () => {
       <div className="portfolio-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            {/* <div className="card-image">
-                <img src={project.imageUrl} alt={`${project.title} Screenshot`} />
-              </div> */}
+           
             <div className="card-info">
               <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <div
+                dangerouslySetInnerHTML={{ __html: project.description }}
+              ></div>
 
               <video autoPlay muted loop width="100%">
                 <source src={project.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              {/* <iframe 
-  width="100%" 
-  height="500" 
-  src={project.videoUrl} 
-  frameBorder="0" 
-  allow="autoplay; fullscreen; picture-in-picture" 
-  allowFullScreen>
-</iframe> */}
+            
             </div>
           </div>
         ))}

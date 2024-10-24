@@ -4,10 +4,12 @@
     display: block;
     list-style: none;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
    
   
     li {
       display: inline-block;
+
     }
   
     a, svg {
@@ -21,6 +23,7 @@
         width: 32px; // Reduce the size from 50px to 40px
         padding: 3px; // Adjust padding to keep spacing proportionate
         margin: 4px; // Adjust margin to keep spacing proportionate
+        font-family: 'Raleway', sans-serif;
     }
   
     svg {

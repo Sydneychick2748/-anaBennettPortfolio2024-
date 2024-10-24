@@ -1,10 +1,14 @@
 
  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap');
+
+ 
+
  
  :root {
    --headline-color: white;
-   --background-color: #11151c;
+   --background-color: #1b1d20;
    --text-color: rgba(255, 255, 255, 0.5);
  } 
  
@@ -14,7 +18,7 @@
    padding: 0;
    overflow-x: hidden;
    background-color: var(--background-color);
-   font-family: "Open Sans", sans-serif;
+   font-family: 'Raleway', sans-serif;
    color: var(--text-color);
    text-align: center;
    display: flex;
@@ -38,7 +42,7 @@
   background-color: #11151c;
   padding: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
+ }
 
 /* Footer stays fixed at the bottom */
 footer {
@@ -48,9 +52,14 @@ footer {
   right: 0;
   z-index: 10;
   background-color: #11151c;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+  /* font-family: "Open Sans", sans-serif; */
+
+    font-family: 'Raleway', sans-serif;
+  
+  
 }
 
 /* Static portfolio container in the middle of the page */
@@ -62,7 +71,9 @@ footer {
   
   width: 100%; /* Adjust as needed */
   max-width: 1200px; /* Limit width if necessary */
- 
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Raleway', sans-serif;
+  
 }
 
  

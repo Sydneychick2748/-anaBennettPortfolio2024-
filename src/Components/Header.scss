@@ -1,4 +1,17 @@
 
+/* Static portfolio container in the middle of the page */
+.portfolio-container {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure perfect centering */
+  
+  width: 100%; /* Adjust as needed */
+  max-width: 1200px; /* Limit width if necessary */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Raleway', sans-serif;
+  
+}
 
   
 
@@ -12,6 +25,7 @@
     z-index: 1;
     width: 800px !important;
     height: 1000px !important; 
+    margin-top: 100px !important;
   }
  
  
@@ -67,3 +81,13 @@
    font-size: 60px !important;
  }
  
+ @media (max-width: 760px) {
+  
+ 
+ 
+
+// //   .span-text-ModelViewer {
+// //     font-size: 30px !important; /* Adjust the span text size */
+    
+// //   }
+}

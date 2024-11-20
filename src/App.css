@@ -10,6 +10,7 @@
    --headline-color: white;
    --background-color: #1b1d20;
    --text-color: rgba(255, 255, 255, 0.5);
+   ---font-family: 'Raleway', sans-serif;
  } 
  
  html, body {
@@ -62,18 +63,5 @@ footer {
   
 }
 
-/* Static portfolio container in the middle of the page */
-.portfolio-container {
-  position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Ensure perfect centering */
-  
-  width: 100%; /* Adjust as needed */
-  max-width: 1200px; /* Limit width if necessary */
-  /* font-family: "Open Sans", sans-serif; */
-  font-family: 'Raleway', sans-serif;
-  
-}
 
  

@@ -8,10 +8,8 @@ import headShot from '../assets/images/HeadShot.png'; // Import the image
 const Bio = () => {
   return (
     <div className="bio-container">
-
-      
       <div className="bio-image-container">
-        {/* <img src={headShot} alt="Ana Bennett" className="bio-image" /> */}
+        <img src={headShot} alt="Ana Bennett" className="bio-image" />
       </div>
       <div className="bio-section">
         <h3 className="italic-heading">"Where creativity meets structure to build seamless web experiences!"</h3>
@@ -21,15 +19,17 @@ const Bio = () => {
           when the code breaks, and finding the 'why' behind every bug. I'm driven and motivated to see things through.
           The process is fun for me, and I’m always eager to learn and grow. Let’s connect and create something awesome together!
         </p>
-        {/* <a href="path-to-your-resume.pdf" className="resume-button" download>
+        {/* Resume Button */}
+        <a
+          href="/resume.pdf" // Path to the resume in the public folder
+          download="Ana_Bennett_Resume.pdf" // Specify the download file name
+          className="resume-button"
+        >
           <FaFileAlt className="resume-icon" /> Download Resume
-        </a> */}
-
+        </a>
       </div>
-      
     </div>
   );
 };
 
 export default Bio;
-

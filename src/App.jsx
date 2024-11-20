@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import PortfolioCard from './Components/PortfolioCard';
 
 
+
 const App = () => {
   
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <PortfolioCard/>
       <Footer />
       <Bio/>
+     
     </div>
   );
 };

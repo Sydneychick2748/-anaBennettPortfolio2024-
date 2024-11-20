@@ -1,19 +1,21 @@
 .bio-container {
   position: absolute;
-  top: 140%; 
-  left: 50%; 
+  top: 140%;
+  left: 50%;
   transform: translate(-50%, -50%);
   max-width: 900px;
   width: 100%;
   padding: 40px;
-  background-color: rgba(17, 21, 28, 0.8); /* Transparent background */
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background-color: #202124; /* Match the project-card background color */
+  border-radius: 10px; /* Match the project-card border radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Match the project-card shadow */
+  font-family: 'Raleway', sans-serif; /* Match the project-card font */
+  color: #E5E5E5; /* Match the project-card text color */
 }
 
 .bio-section {
-  font-family: 'Open Sans', sans-serif;
-  color: whitesmoke;
+  font-family: 'Raleway', sans-serif; /* Use the same font */
+  color: #E5E5E5; /* Match the project-card text color */
   text-align: left;
   padding: 20px;
   line-height: 1.6; /* Improves readability */
@@ -22,33 +24,18 @@
 .bio-image-container {
   text-align: center;
   margin-bottom: 20px;
-  
 }
- .bio-image {
- max-width: 180px;
- border-radius: 10px;
- }
-//   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); /* Octagon shape */
- 
 
-//   display: block;
-//   margin: 0 auto;
-
+.bio-image {
+  max-width: 180px;
+  border-radius: 10px; /* Match the rounded corners of the project-card */
+}
 
 .italic-heading {
   font-style: italic;
   font-weight: bold;
-  color: #e89867; /* Accent color */
-  text-align:  center;
-}
-
-.bio-section p {
-  margin-top: 15px;
-  transition: color 0.3s ease-in-out;
-}
-
-.bio-section p:hover {
-  color: #e89867;
+  color: #e89867; /* Match the accent color */
+  text-align: center;
 }
 
 .resume-button {
@@ -56,31 +43,18 @@
   align-items: center;
   justify-content: center;
   padding: 10px 25px;
-  background-color: #e89867; /* Accent color */
-  color: #ffffff;
+  background-color: #e89867; /* Match the accent color */
+  color: #ffffff; /* White text for contrast */
   font-weight: bold;
   text-decoration: none;
-  border-radius: 30px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px; /* Match button styling */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   margin-top: 20px;
   font-size: 16px;
   cursor: pointer;
-}
-
-.resume-icon {
-  margin-right: 10px;
 }
 
 .resume-button:hover {
   background-color: #8c89d8;
   transform: scale(1.05);
 }
-
-/* Center the button in the bio section */
-.bio-section {
-  text-align: center;
-}
-
-
-
-

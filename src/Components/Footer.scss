@@ -1,8 +1,4 @@
 
-
-
-
-
 footer {
   position: fixed; /* Ensures it stays at the bottom */
   bottom: 0; /* Positions it at the bottom of the viewport */
@@ -18,82 +14,54 @@ footer {
 }
 
 .soc {
-  margin-top: 10px;
-  display: block;
-  list-style: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
   font-family: 'Raleway', sans-serif;
- 
-
-  li {
-    display: inline-block;
-
-  }
-
-  a, svg {
-    display: block;
-  }
-
-  a {
-      display: inline-block;
-      position: relative; // IE8
-      height: 32px; // Reduce the size from 50px to 40px
-      width: 32px; // Reduce the size from 50px to 40px
-      padding: 3px; // Adjust padding to keep spacing proportionate
-      margin: 4px; // Adjust margin to keep spacing proportionate
-      font-family: 'Raleway', sans-serif;
-  }
-
-  svg {
-    height: 100%;
-    width: 100%;
-  }
 }
 
 .icon {
-  background: black;
-  border-radius: 100%;
-  color: white; // IE8
-  fill: white;
+  display: flex;
+  flex-direction: column; /* Stack text above icon */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding: 1px;
+  background-color: #202124;
+  border-radius: 0.75em;
+  width: 60px; /* Button width */
+  height: 60px; /* Button height */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  transition: all 0.3s ease;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: white; /* Default icon color */
+    transition: fill 0.3s ease;
+  }
 
   &:hover {
-    background: white;
-    color: black; // IE8
-    fill: black;
+    background-color: #ffffff; /* White box on hover */
+    svg {
+      fill: black; /* Black icon on hover */
+    }
   }
 }
 
-
-
-.github {
-  background: white;
-  color: black; // IE8
-  fill: black;
-
-  &:hover {
-    background: #6441a5;
-    color: white; // IE8
-    fill: white;
-  }
+.github:hover {
+  background-color: #6441a5;
 }
 
 .linkedin:hover {
-  color: #007BB6; // IE8
-  fill: #007BB6;
+  background-color: #007bb6;
 }
+
 .email:hover {
-      background: white;
-      color: #d14836;
-      fill: #d14836;
-    }
-    
-    .email-icon {
-      transform: scale(0.7); /* Ensure the envelope icon is smaller */
-      transform-origin: center;
-    }
-
-  
-
+  background-color: #d14836;
+}
 
 
 

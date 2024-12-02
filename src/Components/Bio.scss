@@ -37,26 +37,61 @@ margin:50px;
   text-align: center;
 }
 
-.resume-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 25px;
-  background-color: #e89867; /* Match the accent color */
-  color: #ffffff; /* White text for contrast */
-  font-weight: bold;
+.btn-primary {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  text-align: center;
+  border-radius: 0.75em;
+  padding: 0.8rem;
+  width: 20%; /* Adjust this value for desired button width */
   text-decoration: none;
-  border-radius: 5px; /* Match button styling */
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  margin-top: 20px;
-  font-size: 16px;
-  
-    cursor: pointer; /* Ensure the cursor changes to a pointer */
-    z-index: 1; /* Ensure it's above other elements */
-  }
-  
+  transition: all 0.25s ease-in-out;
+  box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
+    0 0 0 4px rgba(0, 0, 0, 0.25), 0 11px 27px -5px rgba(0, 0, 0, 0.53),
+    0 25px 25px -4px rgba(0, 0, 0, 0.35);
+  background-image: radial-gradient(
+      227.71% 180.23% at 90.64% 130.38%,
+      rgb(17, 20, 23) 0%,
+      rgb(55, 59, 63) 100%
+    ),
+    radial-gradient(
+      207.84% 121.69% at -5.69% 111.39%,
+      rgb(17, 20, 23) 0%,
+      rgb(55, 59, 63) 100%
+    ),
+    linear-gradient(
+      206deg,
+      rgba(123, 134, 151, 0.2) 0%,
+      rgba(25, 27, 30, 0.2) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
 
-.resume-button:hover {
-  background-color: #8c89d8;
-  transform: scale(1.05);
+.btn-primary span {
+  font-size: 1rem;
+  background-image: linear-gradient(69deg, #d1d1d1 0%, #828282 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-primary:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
+    0 0 0 4px rgba(0, 0, 0, 0.25), 0 4px 12px -5px rgba(0, 0, 0, 0.53),
+    0 6px 6px -4px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-primary:active span {
+  background-image: linear-gradient(69deg, #e89867 0%, #edeab5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
 }

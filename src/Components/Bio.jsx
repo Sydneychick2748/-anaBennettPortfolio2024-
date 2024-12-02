@@ -20,13 +20,11 @@ const Bio = () => {
           The process is fun for me, and I’m always eager to learn and grow. Let’s connect and create something awesome together!
         </p>
         {/* Resume Button */}
-        <a
-          href="/resume.pdf" // Path to the resume in the public folder
-          
-          className="resume-button"
-        >
-          <FaFileAlt className="resume-icon" /> Download Resume
-        </a>
+        <div class="container">
+  <a href="/resume.pdf" class="btn-primary"><span className="resume-text">Download Resume</span></a>
+</div>
+       
+       
       </div>
     </div>
   );

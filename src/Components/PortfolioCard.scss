@@ -6,23 +6,22 @@ $text-color: #E5E5E5;
 
 
 .portfolio-container {
-  max-width: 1200px; /* Limit max-width */
-  margin: 0 auto; /* Center the container */
+  
+  margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box;
-  padding-top: 330rem;
-    padding-bottom: 200px;
-     z-index: 5; /* Make sure the portfolio container stays on top */
-     font-family: 'Raleway', sans-serif;
-   
-  }
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  font-family: "Raleway", sans-serif;
+  margin-top: 100px;
+  padding-bottom: 200px;
+}
   
   .project-card {
+    position: relative;
     z-index: 5; /* Ensure the project cards stay on top of the model */
     background-color: #202124;
     color: $text-color;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     margin: 20px;
     padding: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -40,6 +39,11 @@ $text-color: #E5E5E5;
         object-fit: cover;
       }
     }
+
+    .video{
+      box-shadow: 0 4px 12px rgba(0, 0, 0,2);
+    }
+    
   
     .card-info {
       padding: 15px;
@@ -78,30 +82,19 @@ $text-color: #E5E5E5;
       }
     }
   }
-  // Media Query for screens 760px and smaller
-
-  // @media (max-width: 760px) {
-    
   
-  //   .project-card {
-  //     width: 135%;
-  //     font-size: 1.8rem;
-  //   }
-  // }
-  /* Make responsive adjustments */
-@media (max-width: 760px) {
+// @media (max-width: 760px) {
   
-
-  // .canvas-container {
-  //   width: 100% !important; /* Ensure the canvas takes full width */
-  //   height: auto !important;
-  //   padding: 0;
-  // }
-
-  // #text-behind, #text-front, #text-behind-blur {
-  //   font-size: 24px; /* Adjust font size for readability */
-  //   padding: 10px 0; /* Adjust spacing */
-  // }
-
-  /* Adjust portfolio cards or other sections as needed */
-}
+//   .portfolio-container {
+//     max-width: 1200px; /* Limit max-width */
+//     margin: 0 auto; /* Center the container */
+//     padding: 20px;
+//     box-sizing: border-box;
+//     padding-top: 360rem;
+//       padding-bottom: 200px;
+//        z-index: 5; /* Make sure the portfolio container stays on top */
+//        font-family: 'Raleway', sans-serif;
+     
+//     }
+  
+// }

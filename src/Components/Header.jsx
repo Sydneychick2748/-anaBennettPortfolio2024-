@@ -9,7 +9,8 @@ const Header = () => {
   const canvasRef = useRef();
 
   return (
-    <div>
+    <>
+<div className="mainContainerHeader">
       <div className="headline-container">
         <div id="text-behind">
           ANA BENNETT
@@ -33,7 +34,8 @@ const Header = () => {
           <ModelViewer />
         </Canvas>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -12,10 +12,10 @@ const App = () => {
   return (
     <div id="root">
       <Header />
-    
+      <Bio/>
       <PortfolioCard/>
       <Footer />
-      <Bio/>
+    
      
     </div>
   );

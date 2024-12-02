@@ -1,102 +1,100 @@
 
-.soc {
-    margin-top: 10px;
-    display: block;
-    list-style: none;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-   
-  
-    li {
-      display: inline-block;
 
-    }
-  
-    a, svg {
-      display: block;
-    }
-  
-    a {
-        display: inline-block;
-        position: relative; // IE8
-        height: 32px; // Reduce the size from 50px to 40px
-        width: 32px; // Reduce the size from 50px to 40px
-        padding: 3px; // Adjust padding to keep spacing proportionate
-        margin: 4px; // Adjust margin to keep spacing proportionate
-        font-family: 'Raleway', sans-serif;
-    }
-  
-    svg {
-      height: 100%;
-      width: 100%;
-    }
-  }
-  
-  .icon {
-    background: black;
-    border-radius: 100%;
-    color: white; // IE8
-    fill: white;
-  
-    &:hover {
-      background: white;
-      color: black; // IE8
-      fill: black;
-    }
-  }
-  
+
+
+
+footer {
+  position: fixed; /* Ensures it stays at the bottom */
+  bottom: 0; /* Positions it at the bottom of the viewport */
+  left: 0;
+  width: 100%; /* Full-width footer */
+  z-index: 10;
+  background-color: #11151c;
+  text-align: center;
+  padding: 10px 0; /* Adjust padding for spacing */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Raleway', sans-serif;
+  color: white; /* Ensure text is readable */
+}
+
+.soc {
+  margin-top: 10px;
+  display: block;
+  list-style: none;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
  
-  
-  .github {
+
+  li {
+    display: inline-block;
+
+  }
+
+  a, svg {
+    display: block;
+  }
+
+  a {
+      display: inline-block;
+      position: relative; // IE8
+      height: 32px; // Reduce the size from 50px to 40px
+      width: 32px; // Reduce the size from 50px to 40px
+      padding: 3px; // Adjust padding to keep spacing proportionate
+      margin: 4px; // Adjust margin to keep spacing proportionate
+      font-family: 'Raleway', sans-serif;
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.icon {
+  background: black;
+  border-radius: 100%;
+  color: white; // IE8
+  fill: white;
+
+  &:hover {
     background: white;
     color: black; // IE8
     fill: black;
-  
-    &:hover {
-      background: #6441a5;
-      color: white; // IE8
-      fill: white;
+  }
+}
+
+
+
+.github {
+  background: white;
+  color: black; // IE8
+  fill: black;
+
+  &:hover {
+    background: #6441a5;
+    color: white; // IE8
+    fill: white;
+  }
+}
+
+.linkedin:hover {
+  color: #007BB6; // IE8
+  fill: #007BB6;
+}
+.email:hover {
+      background: white;
+      color: #d14836;
+      fill: #d14836;
     }
-  }
-  
-  .linkedin:hover {
-    color: #007BB6; // IE8
-    fill: #007BB6;
-  }
-  .email:hover {
-        background: white;
-        color: #d14836;
-        fill: #d14836;
-      }
-      
-      .email-icon {
-        transform: scale(0.7); /* Ensure the envelope icon is smaller */
-        transform-origin: center;
-      }
-
     
-  
-//  // Media Query for screens 760px and smaller
-// @media (max-width: 760px) {
-//   .soc {
-//     font-size: 22px; // Larger font size for text
-//     text-align: center;
-//   }
+    .email-icon {
+      transform: scale(0.7); /* Ensure the envelope icon is smaller */
+      transform-origin: center;
+    }
 
-//   .soc a {
-//     height: 40px; // Larger icon size
-//     width: 40px;
-//     padding: 8px;
-//     margin: 5px;
-//   }
-
-//   .soc svg {
-//     height: 100%;
-//     width: 100%;
-//   }
-// }
   
 
 
-  
-  
+
+
+

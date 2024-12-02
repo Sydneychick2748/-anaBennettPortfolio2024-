@@ -68,7 +68,7 @@ const PortfolioCard = () => {
                 dangerouslySetInnerHTML={{ __html: project.description }}
               ></div>
 
-              <video autoPlay muted loop width="100%">
+              <video  className = "video"autoPlay muted loop width="100%">
                 <source src={project.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

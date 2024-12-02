@@ -22,7 +22,7 @@ const Bio = () => {
         {/* Resume Button */}
         <a
           href="/resume.pdf" // Path to the resume in the public folder
-          download="Ana_Bennett_Resume.pdf" // Specify the download file name
+          
           className="resume-button"
         >
           <FaFileAlt className="resume-icon" /> Download Resume

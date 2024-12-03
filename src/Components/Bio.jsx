@@ -20,8 +20,8 @@ const Bio = () => {
           The process is fun for me, and I’m always eager to learn and grow. Let’s connect and create something awesome together!
         </p>
         {/* Resume Button */}
-        <div class="container">
-  <a href="/resume.pdf" class="btn-primary"><span className="resume-text">Download Resume</span></a>
+        <div className="container">
+  <a href="/resume.pdf" className="btn-primary"><span className="resume-text">Download Resume</span></a>
 </div>
        
        

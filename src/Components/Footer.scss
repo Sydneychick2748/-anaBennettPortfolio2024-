@@ -66,3 +66,19 @@ footer {
 
 
 
+/* Media Query for Screens 760px and Below */
+@media (max-width: 760px) {
+  .soc {
+    gap: 10px; /* Reduce gap between icons */
+  }
+
+  .icon {
+    width: 45px; /* Smaller button width */
+    height: 45px; /* Smaller button height */
+  }
+
+  .icon svg {
+    width: 20px; /* Smaller icon size */
+    height: 20px;
+  }
+}

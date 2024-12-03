@@ -69,6 +69,71 @@
 
 
 
+@media (max-width: 780px) {
+  .canvas-container {
+    width: 900px !important; /* Even smaller width for mobile */
+    height: 800px !important; /* Adjust height proportionally */
+  }
+  .mainContainerHeader {
+    position: relative;
+   padding-bottom: 700px;
+  }
+  .headline-container {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
+  #text-behind,
+  #text-front,
+  #text-behind-blur {
+    font-size: clamp(18px, 10vw, 50px); /* Reduce font size for smaller screens */
+    letter-spacing: 5px; /* Adjust letter spacing for readability */
+  }
+
+  .span-text-ModelViewer {
+    font-size: 40px !important; /* Smaller font for the span text */
+  }
+}
+
+
+/* Media Query for Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .canvas-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 800px !important;
+    height: 1000px !important; 
+    margin-top:90px !important;
+  }
+  .mainContainerHeader {
+    position: relative;
+    padding-bottom: 900px;
+    padding-top: 250px;
+    margin-top: 30px;
+    
+}
+
+  .headline-container {
+    padding: 60px; /* Add padding for smaller screens */
+  }
+ 
+}
 
 
 
+/* Media Query for Extra Small Screens */
+@media (max-width: 480px) {
+  .canvas-container {
+    width: 600px !important; /* Tiny screens */
+    height: 700px !important;
+    margin-top: 50px !important; /* Adjust height proportionally */
+  }
+  .mainContainerHeader {
+    position: relative;
+   padding-bottom: 600px;
+   
+    padding-top: 100px;
+  }
+}

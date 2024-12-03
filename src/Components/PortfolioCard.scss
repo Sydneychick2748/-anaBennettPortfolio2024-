@@ -83,18 +83,40 @@ $text-color: #E5E5E5;
     }
   }
   
-// @media (max-width: 760px) {
   
-//   .portfolio-container {
-//     max-width: 1200px; /* Limit max-width */
-//     margin: 0 auto; /* Center the container */
-//     padding: 20px;
-//     box-sizing: border-box;
-//     padding-top: 360rem;
-//       padding-bottom: 200px;
-//        z-index: 5; /* Make sure the portfolio container stays on top */
-//        font-family: 'Raleway', sans-serif;
-     
-//     }
+  @media (max-width: 760px) {
+    .project-card {
+      padding: 15px; /* Reduce padding for smaller screens */
+      margin: 15px; /* Adjust spacing between cards */
+    }
   
-// }
+    .video {
+      width: 100%; /* Make video take full card width */
+      max-height: 200px; /* Limit the video height */
+      border-radius: 5px; /* Slightly reduce border radius */
+    }
+  
+    .card-info h3 {
+      font-size: 1.5em; /* Reduce title font size */
+    }
+  
+    .card-info p {
+      font-size: 0.9em; /* Reduce paragraph font size */
+      line-height: 1.4; /* Adjust line height for readability */
+    }
+  }
+  @media (min-width: 850px) and (max-width: 1020px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .portfolio-container {
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+        font-family: "Raleway", sans-serif;
+        margin-top: 100px;
+        padding-bottom: 200px;
+        font-size: 17px;
+    }
+}

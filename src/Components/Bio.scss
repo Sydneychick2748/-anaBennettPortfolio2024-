@@ -10,6 +10,13 @@ margin:50px;
   font-family: "Raleway", sans-serif;
   color: #E5E5E5;
 }
+
+.container {
+  display: flex; /* Use flexbox to center the button */
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Add spacing above the button */
+}
+
 .bio-section {
   
   font-family: 'Raleway', sans-serif; /* Use the same font */
@@ -94,4 +101,37 @@ margin:50px;
   -webkit-text-fill-color: transparent;
   font-weight: 400;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
+}
+/* Media Query for Screens 760px and Below */
+@media (max-width: 760px) {
+  .bio-container {
+    padding: 20px; /* Reduce padding */
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .bio-image {
+    max-width: 150px; /* Smaller image size */
+  }
+
+  .italic-heading {
+    font-size: 1.2rem; /* Adjust heading font size */
+  }
+
+  .btn-primary {
+    width: 50%; /* Make button width larger for mobile screens */
+    padding: 0.6rem; /* Adjust padding */
+  }
+
+  .btn-primary span {
+    font-size: 0.9rem; /* Adjust button text size */
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1025px) {
+  h3 {
+      font-size: 17px;
+  }
+  p{
+    font-size: 17px;
+  }
 }

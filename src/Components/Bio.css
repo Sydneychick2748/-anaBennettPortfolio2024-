@@ -3,10 +3,10 @@
   /* max-width: 900px; */
   /* width: 100%; */
   padding: 40px;
-margin:50px;
+  margin: 50px;
   background-color: #202124;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0,2);
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
   font-family: "Raleway", sans-serif;
   color: #E5E5E5;
 }
@@ -18,8 +18,7 @@ margin:50px;
 }
 
 .bio-section {
-  
-  font-family: 'Raleway', sans-serif; /* Use the same font */
+  font-family: "Raleway", sans-serif; /* Use the same font */
   color: #E5E5E5; /* Match the project-card text color */
   text-align: left;
   padding: 20px;
@@ -28,15 +27,13 @@ margin:50px;
 
 .bio-image-container {
   text-align: center;
- 
   border-radius: 5%; /* Optional: Make it circular */
 }
 
 .bio-image {
- 
   max-width: 200px;
   border-radius: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 1);
+  box-shadow: 0 4px 12px rgb(0, 0, 1);
 }
 
 .italic-heading {
@@ -56,25 +53,8 @@ margin:50px;
   width: 20%; /* Adjust this value for desired button width */
   text-decoration: none;
   transition: all 0.25s ease-in-out;
-  box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
-    0 0 0 4px rgba(0, 0, 0, 0.25), 0 11px 27px -5px rgba(0, 0, 0, 0.53),
-    0 25px 25px -4px rgba(0, 0, 0, 0.35);
-  background-image: radial-gradient(
-      227.71% 180.23% at 90.64% 130.38%,
-      rgb(17, 20, 23) 0%,
-      rgb(55, 59, 63) 100%
-    ),
-    radial-gradient(
-      207.84% 121.69% at -5.69% 111.39%,
-      rgb(17, 20, 23) 0%,
-      rgb(55, 59, 63) 100%
-    ),
-    linear-gradient(
-      206deg,
-      rgba(123, 134, 151, 0.2) 0%,
-      rgba(25, 27, 30, 0.2) 100%
-    ),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40, 0 0 0 4px rgba(0, 0, 0, 0.25), 0 11px 27px -5px rgba(0, 0, 0, 0.53), 0 25px 25px -4px rgba(0, 0, 0, 0.35);
+  background-image: radial-gradient(227.71% 180.23% at 90.64% 130.38%, rgb(17, 20, 23) 0%, rgb(55, 59, 63) 100%), radial-gradient(207.84% 121.69% at -5.69% 111.39%, rgb(17, 20, 23) 0%, rgb(55, 59, 63) 100%), linear-gradient(206deg, rgba(123, 134, 151, 0.2) 0%, rgba(25, 27, 30, 0.2) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .btn-primary span {
@@ -90,9 +70,7 @@ margin:50px;
 
 .btn-primary:active {
   transform: translateY(2px);
-  box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
-    0 0 0 4px rgba(0, 0, 0, 0.25), 0 4px 12px -5px rgba(0, 0, 0, 0.53),
-    0 6px 6px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40, 0 0 0 4px rgba(0, 0, 0, 0.25), 0 4px 12px -5px rgba(0, 0, 0, 0.53), 0 6px 6px -4px rgba(0, 0, 0, 0.35);
   transition: all 0.25s ease-in-out;
 }
 
@@ -104,36 +82,32 @@ margin:50px;
   font-weight: 400;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
 }
+
 /* Media Query for Screens 760px and Below */
 @media (max-width: 760px) {
   .bio-container {
     padding: 20px; /* Reduce padding */
     margin: 20px; /* Adjust margin for smaller screens */
   }
-
   .bio-image {
     max-width: 150px; /* Smaller image size */
   }
-
   .italic-heading {
     font-size: 1.2rem; /* Adjust heading font size */
   }
-
   .btn-primary {
     width: 50%; /* Make button width larger for mobile screens */
     padding: 0.6rem; /* Adjust padding */
   }
-
   .btn-primary span {
     font-size: 0.9rem; /* Adjust button text size */
   }
 }
-
 @media (min-width: 850px) and (max-width: 1025px) {
   h3 {
-      font-size: 17px;
-  }
-  p{
     font-size: 17px;
   }
-}
+  p {
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=Bio.css.map */

@@ -4,12 +4,16 @@ import { FaFileAlt } from 'react-icons/fa'; // Import FontAwesome icon
 import './Bio.scss';
 import React from 'react';
 import headShot from '../assets/images/HeadShot.png'; // Import the image
+import profilePic from '../assets/images/profliePic.webp.jpg';
+
 
 const Bio = () => {
   return (
     <div className="bio-container">
       <div className="bio-image-container">
-        <img src={headShot} alt="Ana Bennett" className="bio-image" />
+        {/* <img src={headShot} alt="Ana Bennett" className="bio-image" /> */}
+        <img src={profilePic} alt="Ana Bennett" className="bio-image" />
+
       </div>
       <div className="bio-section">
         <h3 className="italic-heading">"Where creativity meets structure to build seamless web experiences!"</h3>

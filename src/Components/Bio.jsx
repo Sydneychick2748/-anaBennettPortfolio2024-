@@ -3,8 +3,9 @@
 import { FaFileAlt } from 'react-icons/fa'; // Import FontAwesome icon
 import './Bio.scss';
 import React from 'react';
-import headShot from '../assets/images/HeadShot.png'; // Import the image
+// import headShot from '../assets/images/HeadShot.png'; // Import the image
 import profilePic from '../assets/images/profliePic.webp.jpg';
+// import palmTreePic from "../assets/images/palmtree-pic.jpg";
 
 
 const Bio = () => {
